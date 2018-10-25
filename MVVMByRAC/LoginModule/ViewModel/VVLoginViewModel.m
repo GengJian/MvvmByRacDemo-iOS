@@ -21,17 +21,24 @@
         _model.isLogin = NO;
         
         //监听
-        RAC(self,isLoginEnable) = [[RACSignal combineLatest:@[
-                                                              RACObserve(self, account),
-                                                              RACObserve(self, password)]
-                                    ]
-                                   map:^id _Nullable(RACTuple * _Nullable value) {
-                                       RACTupleUnpack(NSString *account, NSString *pwd) = value;
-                                       NSLog(@"RACTupleUnpack:%@,%@",account,pwd);
-                                       return @(account && pwd && account.length && pwd.length);
-                                   }];
+        RAC(self,isLoginEnable) = self.isLoginEnableSignal;
     }
     return self;
+}
+
+- (RACSignal *)isLoginEnableSignal{
+    if (!_isLoginEnableSignal) {
+        _isLoginEnableSignal = [[RACSignal combineLatest:@[
+                                                           RACObserve(self, account),
+                                                           RACObserve(self, password)]
+                                 ]
+                                map:^id _Nullable(RACTuple * _Nullable value) {
+                                    RACTupleUnpack(NSString *account, NSString *pwd) = value;
+                                    NSLog(@"RACTupleUnpack:%@,%@",account,pwd);
+                                    return @(account && pwd && account.length && pwd.length);
+                                }];
+    }
+    return _isLoginEnableSignal;
 }
 
 - (RACCommand *)loginCommand

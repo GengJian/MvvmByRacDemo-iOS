@@ -71,11 +71,9 @@
     }];
     RAC(self.vm,password) = self.passwordTextField.rac_textSignal;
     
-//    RAC(self.loginBtn, enabled) = self.vm.isLoginEnableSignal;
-//    [self.vm.isLoginEnableSignal subscribeNext:^(id  _Nullable x) {
-//        NSLog(@"isLoginEnableSignal:%@",x);
-//    }];
-    RAC(self.loginBtn, enabled) = RACObserve(self.vm, isLoginEnable);
+//  绑定按钮可用状态,以下两种方法都可以用,但是不能共从,因为一个属性只能被RAC绑定一次
+//    RAC(self.loginBtn, enabled) = RACObserve(self.vm, isLoginEnable);
+    RAC(self.loginBtn, enabled) = self.vm.isLoginEnableSignal;
     
     //==================== 持 有 ====================
       @weakify(self)
