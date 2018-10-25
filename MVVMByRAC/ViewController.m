@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "VVLoginViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -19,5 +21,14 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)actionClick:(id)sender {
+    
+    VVLoginViewController *loginvc = [[VVLoginViewController alloc] init];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.navigationController showViewController:loginvc
+                                               sender:nil];
+    });
+    
+}
 
 @end
