@@ -11,6 +11,9 @@
 		0640EDBE218048F90052685A /* VVBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0640EDBD218048F90052685A /* VVBaseViewModel.m */; };
 		0640EDC12180491C0052685A /* VVBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0640EDC02180491C0052685A /* VVBaseController.m */; };
 		0640EDC4218049340052685A /* VVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0640EDC3218049340052685A /* VVBaseView.m */; };
+		06602CCA218466BC00B403EE /* VVGoodsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06602CC9218466BC00B403EE /* VVGoodsViewModel.m */; };
+		06602CCD218466F200B403EE /* VVGoodsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06602CCC218466F200B403EE /* VVGoodsListController.m */; };
+		06602CD02184671C00B403EE /* VVGoodsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06602CCF2184671C00B403EE /* VVGoodsListModel.m */; };
 		068719B2217DF21D0096FDA6 /* VVLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068719B1217DF21D0096FDA6 /* VVLoginViewModel.m */; };
 		068719B5217DF2290096FDA6 /* VVLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068719B4217DF2290096FDA6 /* VVLoginModel.m */; };
 		068719BF217DF43B0096FDA6 /* VVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068719BE217DF43B0096FDA6 /* VVLoginViewController.m */; };
@@ -32,6 +35,12 @@
 		0640EDC02180491C0052685A /* VVBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseController.m; sourceTree = "<group>"; };
 		0640EDC2218049340052685A /* VVBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseView.h; sourceTree = "<group>"; };
 		0640EDC3218049340052685A /* VVBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseView.m; sourceTree = "<group>"; };
+		06602CC8218466BC00B403EE /* VVGoodsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVGoodsViewModel.h; sourceTree = "<group>"; };
+		06602CC9218466BC00B403EE /* VVGoodsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVGoodsViewModel.m; sourceTree = "<group>"; };
+		06602CCB218466F200B403EE /* VVGoodsListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVGoodsListController.h; sourceTree = "<group>"; };
+		06602CCC218466F200B403EE /* VVGoodsListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVGoodsListController.m; sourceTree = "<group>"; };
+		06602CCE2184671C00B403EE /* VVGoodsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVGoodsListModel.h; sourceTree = "<group>"; };
+		06602CCF2184671C00B403EE /* VVGoodsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVGoodsListModel.m; sourceTree = "<group>"; };
 		068719B0217DF21D0096FDA6 /* VVLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVLoginViewModel.h; sourceTree = "<group>"; };
 		068719B1217DF21D0096FDA6 /* VVLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVLoginViewModel.m; sourceTree = "<group>"; };
 		068719B3217DF2290096FDA6 /* VVLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVLoginModel.h; sourceTree = "<group>"; };
@@ -78,6 +87,43 @@
 				0640EDC3218049340052685A /* VVBaseView.m */,
 			);
 			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		06602CC1218465E300B403EE /* GoodsModule */ = {
+			isa = PBXGroup;
+			children = (
+				06602CC2218465F900B403EE /* Model */,
+				06602CC62184665F00B403EE /* ViewModel */,
+				06602CC72184666900B403EE /* Controller */,
+			);
+			path = GoodsModule;
+			sourceTree = "<group>";
+		};
+		06602CC2218465F900B403EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06602CCE2184671C00B403EE /* VVGoodsListModel.h */,
+				06602CCF2184671C00B403EE /* VVGoodsListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06602CC62184665F00B403EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06602CC8218466BC00B403EE /* VVGoodsViewModel.h */,
+				06602CC9218466BC00B403EE /* VVGoodsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06602CC72184666900B403EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				06602CCB218466F200B403EE /* VVGoodsListController.h */,
+				06602CCC218466F200B403EE /* VVGoodsListController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		068719B9217DF25F0096FDA6 /* LoginModule */ = {
@@ -140,6 +186,7 @@
 			children = (
 				06A88DE92175C7FB00FD9FD9 /* AppDelegate.h */,
 				06A88DEA2175C7FB00FD9FD9 /* AppDelegate.m */,
+				06602CC1218465E300B403EE /* GoodsModule */,
 				0640EDB8218048C20052685A /* BaseModule */,
 				068719B9217DF25F0096FDA6 /* LoginModule */,
 				06A88DEC2175C7FB00FD9FD9 /* ViewController.h */,
@@ -295,11 +342,14 @@
 				06A88DEE2175C7FB00FD9FD9 /* ViewController.m in Sources */,
 				068719B5217DF2290096FDA6 /* VVLoginModel.m in Sources */,
 				0640EDBB218048E40052685A /* VVBaseModel.m in Sources */,
+				06602CCD218466F200B403EE /* VVGoodsListController.m in Sources */,
 				0640EDC12180491C0052685A /* VVBaseController.m in Sources */,
 				068719BF217DF43B0096FDA6 /* VVLoginViewController.m in Sources */,
 				06A88DF92175C7FD00FD9FD9 /* main.m in Sources */,
 				068719B2217DF21D0096FDA6 /* VVLoginViewModel.m in Sources */,
+				06602CD02184671C00B403EE /* VVGoodsListModel.m in Sources */,
 				06A88DEB2175C7FB00FD9FD9 /* AppDelegate.m in Sources */,
+				06602CCA218466BC00B403EE /* VVGoodsViewModel.m in Sources */,
 				0640EDBE218048F90052685A /* VVBaseViewModel.m in Sources */,
 				0640EDC4218049340052685A /* VVBaseView.m in Sources */,
 			);
