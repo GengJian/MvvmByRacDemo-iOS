@@ -8,5 +8,6 @@ target 'MVVMByRAC' do
   # Pods for MVVMByRAC
    pod 'ReactiveObjC', '~> 3.1.0'
    pod 'Masonry', '~> 1.1.0'
+   pod 'MJExtension', '~> 3.0.15.1'
 
 end

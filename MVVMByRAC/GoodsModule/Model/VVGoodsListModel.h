@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VVGoodsListModel : VVBaseModel
 
+@property(strong, nonatomic) NSArray <VVGoodDataModel *>*listModel;
+
+@end
+
+@interface VVGoodDataModel : NSObject
+
+@property(copy, nonatomic) NSString *goodName;
+
 @end
 
 NS_ASSUME_NONNULL_END

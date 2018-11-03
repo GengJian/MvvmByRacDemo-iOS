@@ -8,9 +8,16 @@
 
 #import "VVBaseViewModel.h"
 
+#import "VVGoodsListModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VVGoodsViewModel : VVBaseViewModel
+
+@property (strong, readonly, nonatomic) VVGoodsListModel *model;
+
+@property (strong,nonatomic) RACCommand *refreshCommand;
+@property (strong,nonatomic) RACCommand *loadMoreCommand;
 
 @end
 

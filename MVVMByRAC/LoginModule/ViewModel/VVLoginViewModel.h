@@ -6,19 +6,17 @@
 //  Copyright © 2018 Soul. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-#import <ReactiveObjC/ReactiveObjC.h>
+#import "VVBaseViewModel.h"
 
 #import "VVLoginModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VVLoginViewModel : NSObject
+@interface VVLoginViewModel : VVBaseViewModel
 
 /*持有一个服务器响应Model,View可以KVC此model某些属性变化直接反应view变化*/
 //e.g. 假装服务器返回之后给的用户信息model,因为View不能直接持有model,而是被动KVOs此model,所以只读
-@property (strong,readonly,nonatomic) VVLoginModel *model;
+@property (strong ,readonly ,nonatomic) VVLoginModel *model;
 
 /*暴露需要的数据源datasource属性作为判断逻辑中的入参*/
 //e.g. 因为vm要处理登陆逻辑,需要传入账号密码;要在vc里双向绑定这两个值随着控件TextField变化而变化

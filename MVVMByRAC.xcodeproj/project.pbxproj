@@ -57,6 +57,7 @@
 		06A88DF52175C7FD00FD9FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A88DF72175C7FD00FD9FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06A88DF82175C7FD00FD9FD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06CAE3792188842B003EE4AC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1D1D86D7B8E6901564C9EDFE /* Pods-MVVMByRAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMByRAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMByRAC/Pods-MVVMByRAC.release.xcconfig"; sourceTree = "<group>"; };
 		D3C10519F4D47133B0D4D444 /* Pods_MVVMByRAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMByRAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD7389B0A1C7791D2AE9338 /* Pods-MVVMByRAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMByRAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMByRAC/Pods-MVVMByRAC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,9 +187,9 @@
 			children = (
 				06A88DE92175C7FB00FD9FD9 /* AppDelegate.h */,
 				06A88DEA2175C7FB00FD9FD9 /* AppDelegate.m */,
-				06602CC1218465E300B403EE /* GoodsModule */,
-				0640EDB8218048C20052685A /* BaseModule */,
 				068719B9217DF25F0096FDA6 /* LoginModule */,
+				0640EDB8218048C20052685A /* BaseModule */,
+				06602CC1218465E300B403EE /* GoodsModule */,
 				06A88DEC2175C7FB00FD9FD9 /* ViewController.h */,
 				06A88DED2175C7FB00FD9FD9 /* ViewController.m */,
 				06A88DEF2175C7FB00FD9FD9 /* Main.storyboard */,
@@ -196,6 +197,7 @@
 				06A88DF42175C7FD00FD9FD9 /* LaunchScreen.storyboard */,
 				06A88DF72175C7FD00FD9FD9 /* Info.plist */,
 				06A88DF82175C7FD00FD9FD9 /* main.m */,
+				06CAE3792188842B003EE4AC /* PrefixHeader.pch */,
 			);
 			path = MVVMByRAC;
 			sourceTree = "<group>";
@@ -317,6 +319,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MVVMByRAC/Pods-MVVMByRAC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
@@ -324,6 +327,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);

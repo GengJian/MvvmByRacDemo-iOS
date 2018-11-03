@@ -11,3 +11,8 @@
 @implementation VVGoodsListModel
 
 @end
+
+
+@implementation VVGoodDataModel
+
+@end
