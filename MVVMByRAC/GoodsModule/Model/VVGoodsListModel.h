@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class VVGoodDataModel;
 @interface VVGoodsListModel : VVBaseModel
 
 @property(strong, nonatomic) NSArray <VVGoodDataModel *>*listModel;

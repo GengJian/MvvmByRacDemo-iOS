@@ -19,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *statusF = NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame);
+    NSLog(@"statusF:%@",statusF);
+    
+    NSString *screenB = NSStringFromCGRect([UIScreen mainScreen].bounds);
+    NSLog(@"screenB:%@",screenB);
+    
+    [UILayoutGuide ]
 }
 
 - (IBAction)actionClick:(id)sender {

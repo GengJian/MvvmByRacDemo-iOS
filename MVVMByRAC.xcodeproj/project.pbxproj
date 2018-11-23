@@ -185,6 +185,7 @@
 		06A88DE82175C7FB00FD9FD9 /* MVVMByRAC */ = {
 			isa = PBXGroup;
 			children = (
+				06CAE3792188842B003EE4AC /* PrefixHeader.pch */,
 				06A88DE92175C7FB00FD9FD9 /* AppDelegate.h */,
 				06A88DEA2175C7FB00FD9FD9 /* AppDelegate.m */,
 				068719B9217DF25F0096FDA6 /* LoginModule */,
@@ -197,7 +198,6 @@
 				06A88DF42175C7FD00FD9FD9 /* LaunchScreen.storyboard */,
 				06A88DF72175C7FD00FD9FD9 /* Info.plist */,
 				06A88DF82175C7FD00FD9FD9 /* main.m */,
-				06CAE3792188842B003EE4AC /* PrefixHeader.pch */,
 			);
 			path = MVVMByRAC;
 			sourceTree = "<group>";
@@ -500,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4XJ3J29UK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVMByRAC/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVMByRAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4XJ3J29UK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVMByRAC/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVMByRAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
